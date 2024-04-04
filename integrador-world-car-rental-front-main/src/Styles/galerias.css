@@ -1,0 +1,36 @@
+:root{
+  --grey: #474747;
+  --darkblue: #102544;
+  --lightblue: #1879ca;
+  --yellow: #f29206;
+  --white: #ffffff;
+  --palid: #d9d9d9;
+  --greenSend:#5DF370;   
+}
+
+/*GALERIES*/
+
+.galeries {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--darkblue);
+  }
+  
+  /* Estilos específicos para el contenedor de galerías */
+  .galeries-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--darkblue);
+  }
+
+  .favs h2{
+    text-align: center;
+    color: var(--darkblue);
+  }
+
+  

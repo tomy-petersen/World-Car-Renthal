@@ -1,0 +1,244 @@
+:root{
+  --grey: #474747;
+  --darkblue: #102544;
+  --lightblue: #1879ca;
+  --yellow: #f29206;
+  --white: #ffffff;
+  --palid: #d9d9d9;
+  --greenSend:#5DF370;   
+}
+
+
+/* Formulario de crear y editar */
+.form-add {
+    width: 80%; 
+    max-width: 500px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: var(--white);
+    border: 3px solid var(--yellow);
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: var(--darkblue);
+  }
+  
+  /* Espaciado entre grupos de formulario */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de etiquetas de formulario */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: var(--darkblue);
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos de campos de entrada de formulario */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--lightblue);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos de selecciones de formulario */
+  .form-control select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--lightblue);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--yellow);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos de botones de formulario */
+  .btn {
+    background-color: var(--lightblue);
+    color: var(--white);
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block; 
+  }
+  
+  .btn:hover {
+    background-color: var(--yellow);
+  }
+  
+  /* Media queries para dispositivos más pequeños */
+  @media (max-width: 768px) {
+    .form-add {
+      width: 90%;           
+    }
+}
+
+/*LOGIN*/
+.login-form {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .titulo-login {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--darkblue);
+  }
+  
+  .formLOGIN {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid var(--palid);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .btn-login {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .btn-login {
+    text-decoration: none;
+    color: var(--lightblue);
+    font-weight: bold;
+    background-color: var(--white);
+    border: none;
+  }
+  
+  .btn-login:hover {
+    color: var(--yellow);
+    text-decoration: underline var(--yellow);
+  }
+
+  @media (max-width: 768px) {
+    .login-form {
+      max-width: 70%;       
+    }
+
+    .titulo-login{
+        padding-top: 20%;
+        
+    }
+
+    
+  }
+
+  /*REGISTRO*/
+
+.regis-form {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--darkblue);
+  }
+  
+  .titulo-form {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--darkblue);
+  }
+  
+  .genero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .envio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--lightblue);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid var(--yellow);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input[type="radio"] {
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+  
+  .ruta-a-registro{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var();
+  }
+
+  @media (max-width: 768px){
+    .titulo-form{
+        padding-top: 20%;
+    }
+  }
+
+  .envio{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+  }
+
+  .contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text{
+    width: 100%;
+    height: 100px;
+  }

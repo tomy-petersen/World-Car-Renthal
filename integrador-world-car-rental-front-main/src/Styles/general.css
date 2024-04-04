@@ -1,0 +1,337 @@
+:root{
+    --grey: #474747;
+    --darkblue: #102544;
+    --lightblue: #1879ca;
+    --yellow: #f29206;
+    --white: #ffffff;
+    --palid: #d9d9d9;
+    --greenSend:#5DF370;   
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    margin-top: 6rem; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+  }
+  
+  body a{
+    text-decoration: none;
+  }
+  
+  .app-container{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  
+  
+  /*HEADER*/
+  .head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;    
+    background-color: var(--lightblue); 
+    box-shadow: 0 2px 4px var(--grey); 
+    z-index: 1;
+  }
+  
+  .logo img {
+    max-width: 20%; 
+    transition: tranform 0.5s,
+    
+  }
+  
+  .logo img:hover{
+    
+    transform: scale(1.5);
+  }
+  
+  .registro {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .registro li {
+    margin-right: 10px;
+  }
+  
+  .registro li:last-child {
+    margin-right: 0; 
+  }
+  
+  .headerbutton{
+    background-color: var(--white);
+    color: var(--lightblue);
+    border: solid;  
+    border-color: var(--lightblue);
+    width: 10rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .headerbutton:hover{
+    background-color: var(--yellow);
+    color: var(--white);
+  }
+  
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  
+    width: 500px;
+    justify-content: space-around;
+    
+  }
+  
+  .lista a{
+    text-decoration: none;
+  }
+  
+  .nav-list a {  
+    text-decoration: none;
+    color: var(--white);    
+    transition: none; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  }
+  
+  
+  .nav-list a:hover {
+    color: var(--yellow);
+  }
+  
+  .nav-list li:visited{
+    text-decoration: none;
+  }
+  
+  .user-name{
+    color:#1879ca;
+    background-color: var(--white);
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size:x-large;
+    margin-right: 5px;
+    padding: 2px 10px
+  }
+  .user-name a{
+    color: #102544;
+  }
+  .user-name a:hover{
+    color: #f29206;
+  }
+  .admin{
+    list-style: none;
+    margin-right: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  .admin a{
+    color: white;
+  }
+  .admin a :hover{
+    color: var(--yellow);
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .head {
+        display: flex;
+        flex-direction: column;       
+        justify-content: center;
+    }
+  
+    .navbar {
+        display:block;
+    }
+  
+    .registro {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px; 
+    }
+  
+    .headerbutton {
+        width: 100%; 
+    }
+  }
+  
+  /*FOOTER*/
+  
+  
+  .foot {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;  
+    color: var(--palid);
+    position: relative; 
+    width: auto;
+    height: auto;  
+    background-color: var(--lightblue);
+    align-items: center;
+    padding-top: 5px;
+    margin-top: 50px;
+    bottom: 0;
+    width: 98.8vw;
+  }
+  
+  .derechos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--palid);
+    font-size: small;
+  }
+  
+  .foot .logo img {
+    max-width: 70px; 
+  }
+  
+  .foot .redes {
+    display: flex;
+  }
+  
+  .foot .redes div {
+    margin: 0 10px; 
+  }
+  
+  .foot .redes img {
+    max-width: 30px; 
+  }
+  
+  .foot h2 {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    color: var(--white);
+  }
+  .foot a{
+    text-decoration: none;
+  }
+  
+  .redes {
+    display: flex;
+  }
+  
+  .redes div {
+    position: relative;
+    margin-right: 10px; 
+  }
+  
+  .redes img {
+    width: 30px; 
+    height: auto; 
+  }
+  
+  .redes img.hoveri {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .redes div:hover .hoveri {
+    display: block;
+  }
+  
+  .text-contact{
+    text-decoration: none;
+    color: var(--white);  
+  }
+  
+  .text-contact:hover{
+    text-decoration: none;
+    color: var(--yellow);
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .foot {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+  
+    .redes div {
+        margin-right: 0; /* Elimina el margen entre elementos en pantallas pequeñas */
+        margin-bottom: 10px; /* Agrega espacio vertical entre elementos */
+    }
+  
+    .redes img {
+        max-width: 40px; /* Ajusta el tamaño de las imágenes de redes sociales en dispositivos móviles */
+    }
+  }
+
+
+  .menu-user{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 300%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color:#1879ca;
+    text-align: center;
+    box-shadow: #102544 5px 5px 10px ;
+    border:solid #2b93e7 2px;
+    position: absolute;
+    right: 60;
+  }
+  
+  .item{
+    margin-bottom: 15px;
+  }
+  .config{
+    border-bottom: #102544 solid 1px;
+    color: black;
+  }
+  .info-usuario{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family:  Arial, sans-serif; 
+    text-align: start;
+    border-bottom: #102544 solid 1px;
+    margin-bottom: 50px;
+  
+  }
+
+  .politicas {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--yellow);
+    width: 100%;
+    
+    
+  }
+  
+  .politicas-uso {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+     
+  }
+  
+  .politicas-uso h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: var(--lightblue);
+  }
+  
+  .politicas-uso p {
+    margin-bottom: 1em;
+    color: var(--grey);
+  }

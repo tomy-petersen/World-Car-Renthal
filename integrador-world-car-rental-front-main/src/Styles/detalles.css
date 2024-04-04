@@ -1,0 +1,182 @@
+:root{
+    --grey: #474747;
+    --darkblue: #102544;
+    --lightblue: #1879ca;
+    --yellow: #f29206;
+    --white: #ffffff;
+    --palid: #d9d9d9;
+    --greenSend:#5DF370;   
+  }
+
+/* DETALLES */
+.details-section{
+  display: flex;
+  justify-content: space-around;
+}
+.dates{
+  padding: 20px;
+  margin-left: 5px;
+}
+.details-head{
+  display: flex;
+  justify-content: space-around;
+}
+.car-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--darkblue);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+ .titulo {
+    padding-top: 30px;
+    padding-right: 10px;
+  }
+  
+  .volver {
+    width: 40px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .volver:hover {
+    transform: scale(1.2);
+  }
+  
+  .car-details-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .detalles {
+    border: 2px solid var(--yellow);
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .detalles h3,
+  .detalles p {
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  .car-details-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .volver {
+      padding-right: 5%;
+      padding-top: 90%;
+    }
+  
+    .detalles {
+      width: 90%;
+    }
+  }
+  
+
+  /* Imagenes del producto */
+
+.car-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .img-principal {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .img-principal img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .carimg-grill {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .carimg-grill img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .ver-mas-imagenes {
+    display: none;
+  }
+  
+  .botones-ver-mas {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .botones-ver-mas button {
+    background-color: var(--lightblue);
+    color: var(--white);
+    border: solid;
+    border-color: var(--lightblue);
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .botones-ver-mas button:hover {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+  }
+  
+  @media (max-width: 768px) {
+    .car-img {
+      flex-direction: column;
+      margin-top: 150px;
+    }
+  
+    .img-principal, .carimg-grill {
+      flex: 1;
+    }
+  
+    .carimg-grill {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+  }
+
+
+  /*##### Prueba boton reserva #####*/
+  .reserva{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #1879ca;
+    margin-top: 10px;
+    color: white;
+    border: none;
+  }
+  .reserva:hover{
+    background-color: #f29206;
+    cursor: pointer;
+  }
+
+  .calendar-container .selected{
+    background-color:#1879ca;
+    color: white;
+  }
+  .calendar-container button{
+    background-color: white;
+}
